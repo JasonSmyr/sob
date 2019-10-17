@@ -1,0 +1,47 @@
+{
+  "name": "Click to edit name",
+  "class": "Click to edit class",
+  "keywords": ["Click to edit keywords"],
+  "baseStats": {
+    "level": 0,
+    "initiative": 0,
+    "combat": 0,
+    "melee": 0,
+    "range": 0,
+    "agility": 0,
+    "cunning": 0,
+    "spirit": 0,
+    "strength": 0,
+    "lore": 0,
+    "luck": 0,
+    "defense": 0,
+    "willpower": 0,
+    "maxHealth": 0,
+    "maxSanity": 0,
+    "maxGrit": 0
+  },
+  "counters": {
+    "wound": 0,
+    "sanity": 0,
+    "grit": 0,
+    "corruption": 0,
+    "xp": 0,
+    "gold": 0,
+    "darkstone": 0
+  },
+  "sideBag": {
+    "capacity": 0,
+    "bandages": 0,
+    "tonic": 0,
+    "dynamite": 0,
+    "whiskey": 0,
+    "herbs": 0,
+    "flash": 0
+  },
+  "items":
+  [],
+  "abilities":
+  [],
+  "injuries":
+  []
+}

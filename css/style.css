@@ -1,0 +1,809 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+@font-face {
+    font-family: rockwell-condensed-bold;
+    src: url("/css/rockwell-condensed-bold.ttf");
+}
+
+.smallFont {
+  font-family: Roboto Slab;
+  font-size: 12;
+}
+
+body {
+  background-color: #3E2520;
+  color: black;
+  font-family: 'rockwell-condensed-bold','Roboto Slab', serif;
+  font-variant: small-caps;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #977548;
+    /*border: 1px solid black;*/
+    word-wrap: break-word;
+}
+
+.rockwell {
+  font-family: 'rockwell-condensed-bold','Roboto Slab', serif;
+}
+
+.buttons {
+	font-family: 'rockwell-condensed-bold','Roboto Slab', serif;
+	font-size: 125%;
+	width: 15%;
+	height: 80px;
+}
+
+.text {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 42;
+  margin: auto;
+  /*background-color: rgba(255, 0, 0, 0.25);*/
+  cursor: pointer;
+  text-shadow: 3px 3px 5px #977548;
+}
+
+
+.stats {
+  top:0;
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 42;
+  text-align: center;
+  /*background-color: rgba(255, 0, 0, 0.25);*/
+  cursor: pointer;
+  text-shadow: 2px 2px 5px #977548;
+}
+
+.counters {
+  top:0;
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 42;
+  text-align: center;
+  /*background-color: rgba(255, 0, 0, 0.25);*/
+  cursor: pointer;
+  text-shadow: 3px 3px 5px #977548;
+}
+
+.money:before {
+  content: "$";
+}
+
+.plus:after {
+   content: "+";
+}
+
+.editing {
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 1000;
+}
+
+.noPlus:after {
+   content: "";
+}
+
+.bonusPositive {
+  text-shadow: 0 0 0.2em #8F7, 0 0 0.2em #8F7, 0 0 0.2em #8F7;
+}
+
+.bonusNegative {
+  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87, 0 0 0.2em #F87;
+}
+
+.editingMulti {
+  background-color: white;
+  z-index: 1000;
+}
+
+.editing {
+  z-index: 1000;
+}
+
+.checkbox {
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.selectbox {
+  width: 150%;
+  fontSize: 100%;
+}
+
+.glyphibutton:hover {
+  color: red;
+}
+
+.register-btn-group {
+
+}
+
+.registerkey {
+  display: inline-block;
+  padding: 10px;
+  margin:  5px;
+  background-color: #fff;
+  width: 140px;
+  height: 140px;
+
+  border-radius: 80px;
+  background-image:    radial-gradient(ellipse at center, #ffffff 0%, #666 60%, #ffffff 65%, #ffffff 67%, #222 70%, #ffffff 100%);
+  box-shadow: 3px 5px 0px 1px #444;
+}
+
+.registerkey > button {
+  font-size: 60;
+  color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 80px;
+
+  /*
+  border-width: 10px;
+  border-color: #f4f4f4;
+  box-shadow: 3px 5px 0px 1px #333;*/
+}
+
+
+.registerkey:hover {
+   transform: translateY(6px);
+ }
+
+.registerkey:active {
+  transform: translateY(6px);
+}
+
+.registerkey > button:hover {
+  color: #fff;
+ 
+}
+
+.registerkey > button:active {
+  color: #fff;
+}
+
+.registerkey > button:focus {
+  color: #fff;
+}
+
+.registerkey > span {
+
+}
+
+.registerkey > button.redkey {
+  background-image: radial-gradient(ellipse at center, rgba(247,117,94,1) 0%, rgba(247,117,94,1) 1%, rgba(198,64,49,1) 62%, rgba(0,0,0,1) 71%, rgba(10,10,10,1) 100%);
+}
+
+.registerkey > button.blackkey {
+  background-image:  radial-gradient(ellipse at center, rgba(92,92,92,1) 0%, rgba(92,92,92,1) 1%, rgba(53,51,50,1) 62%, rgba(20,20,20,1) 71%, rgba(20,20,20,1) 100%);
+}
+
+.editKeywordsModal {
+  position: absolute;
+  color: black;
+  font-weight: bold;
+  font-size: 42;
+  margin: auto;
+  /*background-color: rgba(255, 0, 0, 0.25);*/
+  cursor: pointer;
+  text-shadow: 3px 3px 5px #977548;
+}
+
+.editLargeModal > div > div > div > label > input {
+    width: 20px;
+    height: 20px;
+}
+
+.itemsAbilitysInjuries {
+  position: absolute;
+  top: 325px;
+  left: 240px;
+  
+  font-size: 36;
+}
+
+.itemsAbilitysInjuries > div {
+  display: inline-block;
+  margin: 20px;
+  height: 50px;
+
+  /*border-width: 1px;
+  border-style: solid;
+  border-color: #000000;*/
+}
+
+.itemsAbilitysInjuries > div:nth-of-type(1){
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.itemsAbilitysInjuries > div:nth-of-type(2){
+  position: absolute;
+  top: 0px;
+  left: 110px;
+  width: 140px;
+  cursor: pointer;
+}
+
+.itemsAbilitysInjuries > div:nth-of-type(3){
+  position: absolute;
+  top: 0px;
+  left: 260px;
+  width: 350px;
+  cursor: pointer;
+}
+
+.itemsPanel {
+	position: absolute;
+	top: 405px;
+	left: 130px;
+	width: 870px;
+	height: 465px;
+	color: black;
+	font-size: 20;
+	margin: auto;
+	text-shadow: 3px 3px 5px #977548;
+
+	/*background-color: rgba(255, 0, 0, 0.25);
+	border-style: solid;
+	border-width: 2px; */
+}
+
+.abilitiesPanel {
+  position: absolute;
+  top: 405px;
+  left: 130px;
+  width: 870px;
+  height: 465px;
+  color: black;
+  font-size: 20;
+  margin: auto;
+  text-shadow: 3px 3px 5px #977548;
+
+  /*background-color: rgba(255, 0, 0, 0.25);
+  border-style: solid;
+  border-width: 2px; */
+}
+
+.abilitiesPanel > span
+{
+  position: absolute;
+  top: 130px;
+  left: 190px;
+  font-size: 60;
+}
+
+.injuriesPanel {
+  position: absolute;
+  top: 405px;
+  left: 130px;
+  width: 870px;
+  height: 465px;
+  color: black;
+  font-size: 20;
+  margin: auto;
+  text-shadow: 3px 3px 5px #977548;
+
+  /*background-color: rgba(255, 0, 0, 0.25);
+  border-style: solid;
+  border-width: 2px; */
+}
+
+.injuriesPanel > span
+{
+  position: absolute;
+  top: 130px;
+  left: 210px;
+  font-size: 60;
+}
+
+.itemRows {
+	position: absolute;
+	top: 30px;
+	left: 8px;
+	width: 860px;
+	height: 400px;
+	color: black;
+	font-size: 0;
+	margin: auto;
+	overflow: auto;
+	text-shadow: 3px 3px 5px #977548;
+
+	/*background-color: rgba(255, 0, 0, 0.25);
+	border-style: solid;
+	border-width: 2px;*/
+}
+
+.itemRow {
+  font-size: 18;
+  width: 100%;
+  /*background-color: rgba(255, 0, 0, 0.25);*/
+}
+
+.addButton {
+	position: absolute;
+  top: 430px;
+	left: 728px;
+	font-size: 90%; 
+	width: 110px; 
+	height: 30px;
+	border-radius: 5px;
+	padding-top: 2px;
+}
+
+.itemsIcons {
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	width: 150px;
+	height: 30px;
+}
+
+.modaltext {
+  color: black;
+  font-weight: bold;
+  font-size: 42;
+  text-shadow: 3px 3px 5px #977548;
+}
+
+.modalbox {
+    position: fixed; /* Stay in place */
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    cursor: pointer;
+}
+
+.noShadow {
+  text-shadow: 0px 0px 0px #977548;
+}
+
+.nopointer {
+  cursor: default;
+}
+
+.editLargeModal {
+	position: fixed;
+	top:15%;
+	left:15%;
+	width: 1000px;
+	height: 500px;
+	background-color: transparent;
+	text-align: center;
+	padding: 20px 20px;
+	border-radius: 20px;
+
+  background-image: url("/img/parchment.gif");
+  background-size: 1000px 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.editWideModal {
+  position: fixed;
+  top:10%;
+  left:8%;
+  width: 1200px;
+  height: 500px;
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 20px;
+  border-radius: 10px;
+
+  background-image: url("/img/parchment.gif");
+  background-size: 1250px 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.editSmallModal {
+	position: fixed;
+	top:15%;
+	left:25%;
+	width: 600px;
+	height: 200px;
+	background-color: transparent;
+	text-align: center;
+	padding: 20px 20px;
+	border-radius: 20px;
+
+  background-image: url("/img/parchment_sm.gif");
+  background-size: 600px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tabControl {
+  border: 1px solid #45270A;
+  border-radius: 9px 0px 0px 9px;
+  padding: 2px 8px;
+  height: 50px;
+}
+
+.tabControl:active {
+  background-color: rgba(255,255,255,0.35);
+}
+.tabControlActive {
+  border: 1px solid #45270A;
+  border-radius: 9px 0px 0px 9px;
+  padding: 2px 8px;
+  background-color: rgba(255,255,255,0.35);
+}
+
+.itemModalTabPanel {
+  position: absolute;
+  top: 200px;
+  left: 21px;
+  font-size: 28;
+  width: 110px;
+  height: 200px;
+  text-align: left;
+}
+
+.itemModalName {
+  position: absolute;
+  top: 90px;
+  left: 140px;
+  font-size: 32;
+  width: 1030px;
+  height: 60px;
+  text-align: left;
+}
+
+.itemModalDeletePanel {
+  position: absolute;
+  top: 150px;
+  left: 130px;
+  width: 1050px;
+  height: 280px;
+  text-align: left;
+  border: 1px solid #45270A;
+  border-radius: 15px;
+  padding-left: 10px;
+  background-color: rgba(255,255,255,0.35);
+}
+
+.itemModalDeletePanel > button {
+  position: absolute;
+  top: 120px;
+  left: 400px;
+  font-size: 40;
+}
+
+.itemModalDeletePanel > span {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+
+.itemModalStatsPanel {
+  position: absolute;
+  top: 150px;
+  left: 130px;
+  font-size: 32;
+  width: 1050px;
+  height: 280px;
+  text-align: left;
+  border: 1px solid #45270A;
+  border-radius: 15px;
+  padding-left: 10px;
+  background-color: rgba(255,255,255,0.35);
+
+
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  column-fill: auto;
+  -moz-column-fill: auto; /* Firefox */
+}
+
+.itemModalStatsPanel > div {
+  height: 12px;
+}
+
+.itemModalStatsPanel > input {
+  height: 40px;
+  width: 100px;
+  font-size: 26;
+}
+
+.itemModalStatsPanel > select {
+  font-size: 26;
+}
+
+
+.itemModalBonusesPanel {
+  position: absolute;
+  top: 150px;
+  left: 130px;
+  font-size: 34;
+  width: 1050px;
+  height: 280px;
+  text-align: left;
+  border: 1px solid #45270A;
+  border-radius: 15px;
+  padding-left: 15px;
+  background-color: rgba(255,255,255,0.35);
+
+}
+
+.itemModalBonusesPanel > div > select {
+  font-size: 26;
+}
+
+.itemModalBonusesPanel > div {
+  width: 30%;
+  float: left;
+}
+
+.itemModalAbilitiesPanel {
+  position: absolute;
+  top: 150px;
+  left: 130px;
+  font-size: 28;
+  width: 1050px;
+  height: 280px;
+  text-align: left;
+  border: 1px solid #45270A;
+  border-radius: 15px;
+  text-shadow: 0px 0px 0px #977548;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.35);
+}
+
+.itemModalAbilitiesPanel > input
+{
+  font-family: Roboto Slab;
+  font-variant: normal;
+  font-size: 20;
+  width: 500px;
+  height: 30px;
+}
+
+.itemModalAbilitiesPanel > div
+{
+  overflow: auto;
+  width: 1020px;
+  height: 230px;
+}
+
+.itemModalAbilitiesPanel > div > ul
+{
+  font-family: Roboto Slab;
+  font-variant: normal;
+  font-size: 18;
+}
+
+.itemModalAbilitiesPanel > div > ul > li:hover
+{
+  color: red;
+}
+
+.gi-50x{font-size: .5em;}
+.gi-75x{font-size: .75em;}
+.gi-1x{font-size: 1em;}
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+#statsButtonGroup {
+  position: relative;
+}
+
+#name {
+  top: 45px;
+  left: 210px;
+  width: 270px;
+  height: 50px;
+  font-size: 60;
+}
+
+#class {
+  top: 95px;
+  left: 185px;
+  width: 295px;
+  font-size: 32;
+}
+
+#keywords {
+  top: 145px;
+  left: 225px;
+  width: 255px;
+  font-size: 26;
+}
+
+#initiative {
+  top: 226px;
+  left: 127px;
+  width: 50px;
+}
+
+#combat {
+  top: 215px;
+  left: 236px;
+  width: 75px;
+}
+
+#melee {
+  top: 215px;
+  left: 344px;
+  width: 75px;
+}
+
+#range {
+  top: 215px;
+  left: 448px;
+  width: 75px;
+}
+
+#agility {
+  top: 100px;
+  left: 527px;
+  width: 75px;
+}
+
+#cunning {
+  top: 100px;
+  left: 666px;
+  width: 75px;
+}
+
+#spirit {
+  top: 100px;
+  left: 806px;
+  width: 75px;
+}
+
+#strength {
+  top: 205px;
+  left: 601px;
+  width: 75px;
+}
+
+#lore {
+  top: 205px;
+  left: 739px;
+  width: 75px;
+}
+
+#luck {
+  top: 205px;
+  left: 879px;
+  width: 75px;
+}
+
+#level {
+  top: 87px;
+  left: 955px;
+  width: 75px;
+  font-size: 54;
+}
+
+#maxHealth {
+  top: 120px;
+  left: 1090px;
+  width: 75px;
+}
+
+#maxSanity {
+  top: 255px;
+  left: 1090px;
+  width: 75px;
+}
+
+#maxGrit {
+  top: 390px;
+  left: 1090px;
+  width: 75px;
+}
+
+#wound {
+  top: 80px;
+  left: 1205px;
+  width: 75px;
+}
+
+#sanity {
+  top: 215px;
+  left: 1205px;
+  width: 75px;
+}
+
+#grit {
+  top: 355px;
+  left: 1205px;
+  width: 75px;
+}
+
+#defense {
+  top: 100px;
+  left: 1312px;
+  width: 75px;
+}
+
+#willpower {
+  top: 235px;
+  left: 1312px;
+  width: 75px;
+}
+
+#corruption {
+  top: 355px;
+  left: 1303px;
+  width: 75px;
+}
+
+#xp {
+  top: 515px;
+  left: 1105px;
+  width: 65px;
+  font-size: 26;
+}
+
+#gold {
+  top: 515px;
+  left: 1205px;
+  width: 70px;
+  font-size: 26;
+}
+
+#darkstone {
+  top: 505px; 
+  left: 1303px;
+  width: 75px;
+}
+
+#bandages {
+  top: 638px;
+  left: 1110px;
+  width: 65px;
+}
+
+#tonic {
+  top: 638px;
+  left: 1210px;
+  width: 70px;
+}
+
+#dynamite {
+  top: 638px;
+  left: 1313px;
+  width: 75px;
+}
+
+#whiskey {
+  top: 765px;
+  left: 1110px;
+  width: 65px;
+}
+
+#herbs {
+  top: 765px;
+  left: 1210px;
+  width: 70px;
+}
+
+#flash {
+  top: 765px;
+  left: 1313px;
+  width: 75px;
+}
