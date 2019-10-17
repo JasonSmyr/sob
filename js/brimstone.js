@@ -45,7 +45,7 @@ var CharacterSheet = React.createClass({
 		  }
 		  else
 		  {
-			this.serverRequest = $.get('/brimstone_base.json', function (result) {
+			this.serverRequest = $.get('/sob/brimstone_base.json', function (result) {
 				this.setState({
 					characterData: result
 				});
@@ -53,7 +53,7 @@ var CharacterSheet = React.createClass({
 		  }
 		  
 		  if(this.state.characterClasses.length === 0){
-			this.serverRequest = $.get('/brimstone_classes.json', function (result) {
+			this.serverRequest = $.get('/sob//brimstone_classes.json', function (result) {
 					this.setState({
 						characterClasses: result.classes
 					});
@@ -61,7 +61,7 @@ var CharacterSheet = React.createClass({
 		  }
 		  
 		  if(this.state.characterKeywords.length === 0){
-			this.serverRequest = $.get('/brimstone_keywords.json', function (result) {
+			this.serverRequest = $.get('/sob/brimstone_keywords.json', function (result) {
 					this.setState({
 						characterKeywords: result.keywords
 					});
