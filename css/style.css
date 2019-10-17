@@ -397,7 +397,7 @@ th, td {
 	padding: 20px 20px;
 	border-radius: 20px;
 
-  background-image: url("/img/parchment.gif");
+  background-image: url("sob/img/parchment.gif");
   background-size: 1000px 500px;
   background-repeat: no-repeat;
   background-position: center;
@@ -414,7 +414,7 @@ th, td {
   padding: 20px 20px;
   border-radius: 10px;
 
-  background-image: url("/img/parchment.gif");
+  background-image: url("sob/img/parchment.gif");
   background-size: 1250px 500px;
   background-repeat: no-repeat;
   background-position: center;
@@ -431,7 +431,7 @@ th, td {
 	padding: 20px 20px;
 	border-radius: 20px;
 
-  background-image: url("/img/parchment_sm.gif");
+  background-image: url("sob/img/parchment_sm.gif");
   background-size: 600px 200px;
   background-repeat: no-repeat;
   background-position: center;
