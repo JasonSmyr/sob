@@ -255,7 +255,7 @@ var CharacterSheet = React.createClass({
 					<div id="menubar" className="menuButtons">
 						<button onClick={this.onSaveOne} >{charOne}</button>
 						<button onClick={this.onSaveTwo} >{charTwo}</button>
-						<button onClick={this.onExport} >DownLoad Characters</button>
+						<button onClick={this.onExport} >Download Characters</button>
 						<ImportButtonModal id="name" className="text" data={characterData.name} onUpdate={this.onUpdate} maxLength="28" />
 					</div>
 					<EditNameModal id="name" className="text" data={characterData.name} onUpdate={this.onUpdate} maxLength="28" />
