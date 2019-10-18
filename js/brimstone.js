@@ -216,9 +216,6 @@ var CharacterSheet = React.createClass({
 	},
 
 	onExport: function () {
-		copy(JSON.stringify(localStorage));
-
-
 		var data, filename, link;
      
 		var csv=JSON.stringify(localStorage)
