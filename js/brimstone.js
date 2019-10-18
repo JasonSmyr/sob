@@ -219,7 +219,7 @@ var CharacterSheet = React.createClass({
 		var data, filename, link;
      
 		var csv=JSON.stringify(localStorage)
-        filename = args.filename || 'sob.json';
+        filename = 'sob.json';
 
         if (!csv.match(/^data:text\/csv/i)) {
             csv = 'data:text/csv;charset=utf-8,' + csv;
