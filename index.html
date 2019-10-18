@@ -24,6 +24,5 @@
   <body>
     <div id="content"></div>
     <script type="text/babel" src="js/brimstone.js"></script>
-    <script type="text/javascript" src="js/GoogleAnalytics.js"></script>
   </body>
 </html>
