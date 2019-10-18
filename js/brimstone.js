@@ -1486,16 +1486,16 @@ var ItemRows = React.createClass({
 			var items = this.props.data.map((item) => (
 				<tr className="itemRow noShadow" style={{ verticalAlign: "top", opacity: item.equipped === true ? "1" : ".35" }}>
 					<td style={{ textAlign: "center", width: "23px" }}>
-						<span>{item.baseStats.anvil}</span>
+						<span>{item.baseStats.anvil==0 ? "": item.baseStats.anvil}</span>
 					</td>
 					<td style={{ textAlign: "center", width: "28px" }}>
-						<span>{item.baseStats.darkstone}</span>
+						<span>{item.baseStats.darkstone==0 ? "": item.baseStats.darkstone}</span>
 					</td>
 					<td style={{ textAlign: "center", width: "25px" }}>
-						<span>{item.baseStats.hands}</span>
+						<span>{item.baseStats.hands==0 ? "": item.baseStats.hands}</span>
 					</td>
 					<td style={{ textAlign: "center", width: "38px" }}>
-						<span>{item.baseStats.slots}</span>
+					<span>{item.baseStats.slots==0 ? "": item.baseStats.slots}</span>
 					</td>
 					<td style={{ textAlign: "left", width: "50px" }}>
 						<span className="money">{item.baseStats.value}</span>
