@@ -217,7 +217,24 @@ var CharacterSheet = React.createClass({
 
 	onExport: function () {
 		copy(JSON.stringify(localStorage));
+
+
+		var data, filename, link;
+     
+		var csv=JSON.stringify(localStorage)
+        filename = args.filename || 'sob.json';
+
+        if (!csv.match(/^data:text\/csv/i)) {
+            csv = 'data:text/csv;charset=utf-8,' + csv;
+        }
+        data = encodeURI(csv);
+
+        link = document.createElement('a');
+        link.setAttribute('href', data);
+        link.setAttribute('download', filename);
+        link.click();
 	},
+	
 
 	render: function () {
 		if (this.state.loaded) {
@@ -241,6 +258,7 @@ var CharacterSheet = React.createClass({
 					<div id="menubar" className="menuButtons">
 						<button onClick={this.onSaveOne} >{charOne}</button>
 						<button onClick={this.onSaveTwo} >{charTwo}</button>
+						<button onClick={this.onExport} >ExportTest</button>
 						<ExportButtonModal id="name" className="text" data={characterData.name} onUpdate={this.onUpdate} maxLength="28" />
 					</div>
 					<EditNameModal id="name" className="text" data={characterData.name} onUpdate={this.onUpdate} maxLength="28" />
