@@ -1501,7 +1501,7 @@ var ItemRows = React.createClass({
 						<span className="money">{item.baseStats.value}</span>
 					</td>
 					<td style={{ textAlign: "center", width: "28px" }}>
-						<span>{item.baseStats.count}</span>
+						<span>{item.baseStats.count==0 ? "-": item.baseStats.count}</span>
 					</td>
 					<td style={{ textAlign: "left", width: "542px" }}>
 						<ItemDescription data={item} />
