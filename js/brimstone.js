@@ -255,8 +255,8 @@ var CharacterSheet = React.createClass({
 					<div id="menubar" className="menuButtons">
 						<button onClick={this.onSaveOne} >{charOne}</button>
 						<button onClick={this.onSaveTwo} >{charTwo}</button>
-						<button onClick={this.onExport} >ExportTest</button>
-						<ExportButtonModal id="name" className="text" data={characterData.name} onUpdate={this.onUpdate} maxLength="28" />
+						<button onClick={this.onExport} >DownLoad Characters</button>
+						<ImportButtonModal id="name" className="text" data={characterData.name} onUpdate={this.onUpdate} maxLength="28" />
 					</div>
 					<EditNameModal id="name" className="text" data={characterData.name} onUpdate={this.onUpdate} maxLength="28" />
 					<EditClassModal id="class" className="text" data={characterData.class} options={this.state.characterClasses} onUpdate={this.onUpdate} />
@@ -311,7 +311,7 @@ var CharacterSheet = React.createClass({
 	}
 });
 
-var ExportButtonModal = React.createClass({
+var ImportButtonModal = React.createClass({
 	getInitialState: function () {
 		return {
 			editing: false,
@@ -396,7 +396,7 @@ var ExportButtonModal = React.createClass({
 						<div id="modalbox" className="modaltext editLargeModal">
 							<div style={{ width: '100%', height: "150px" }}>
 								<div style={{ width: '100%' }}>
-									<span style={{ fontSize: "100%" }}>Enter your character name:</span>
+									<span style={{ fontSize: "100%" }}>Don't Use, does not work</span>
 									<div>
 										<input id="nameInput" type="text" value={this.props.data} onChange={this.onChange} onKeyPress={this.onKeyPress} style={{ fontSize: "36", width: "90%", Height: "50px" }} />
 									</div>
@@ -409,7 +409,7 @@ var ExportButtonModal = React.createClass({
 		}
 		else {
 			return (
-				<button onClick={this.onClick} >Export</button>
+				<button onClick={this.onClick} >Import Character</button>
 			);
 		}
 	}
