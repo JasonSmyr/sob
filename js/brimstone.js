@@ -230,8 +230,7 @@ var CharacterSheet = React.createClass({
         link.setAttribute('href', data);
         link.setAttribute('download', filename);
         link.click();
-	},
-	
+	},	
 
 	render: function () {
 		if (this.state.loaded) {
@@ -1496,6 +1495,10 @@ var ItemRows = React.createClass({
 		this.props.itemEdit(id);
 	},
 
+	onUpdateCount: function(field, value){
+
+	},
+
 	render: function () {
 		if (this.props.data !== null) {
 			var items = this.props.data.map((item) => (
@@ -1516,7 +1519,9 @@ var ItemRows = React.createClass({
 						<span>{item.baseStats.value==0 ? "": "$"+item.baseStats.value}</span>
 					</td>
 					<td style={{ textAlign: "center", width: "28px" }}>
-						<span>{item.baseStats.count==0 ? "-": item.baseStats.count}</span>
+						//<span>{item.baseStats.count==0 ? "-": item.baseStats.count}</span>
+						<EditSideBagModal id="count" className="counters" data={item.baseStats.count || "0"} onUpdate={this.onUpdateCount} maxLength="2" />
+
 					</td>
 					<td style={{ textAlign: "left", width: "542px" }}>
 						<ItemDescription data={item} />
