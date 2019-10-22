@@ -1496,7 +1496,7 @@ var ItemRows = React.createClass({
 	},
 
 	onUpdateCount: function(field, value){
-
+		this.props.baseStats.Count=value;
 	},
 
 	render: function () {
@@ -1515,7 +1515,7 @@ var ItemRows = React.createClass({
 					<td style={{ textAlign: "center", width: "38px" }}>
 					<span>{item.baseStats.slots==0 ? "": item.baseStats.slots}</span>
 					</td>
-					<td style={{ textAlign: "left", width: "50px" }}>
+					<td style={{ textAlign: "left", width: "45px" }}>
 						<span>{item.baseStats.value==0 ? "": "$"+item.baseStats.value}</span>
 					</td>
 					<td style={{ textAlign: "center", width: "28px" }}>
