@@ -1519,9 +1519,7 @@ var ItemRows = React.createClass({
 						<span>{item.baseStats.value==0 ? "": "$"+item.baseStats.value}</span>
 					</td>
 					<td style={{ textAlign: "center", width: "28px" }}>
-						//<span>{item.baseStats.count==0 ? "-": item.baseStats.count}</span>
 						<EditSideBagModal id="count" data={item.baseStats.count || "0"} onUpdate={this.onUpdateCount} maxLength="2" />
-
 					</td>
 					<td style={{ textAlign: "left", width: "542px" }}>
 						<ItemDescription data={item} />
